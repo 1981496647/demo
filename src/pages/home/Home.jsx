@@ -17,7 +17,7 @@ const Home = memo(() => {
           <Card>
             <p className="title">MMT Smart Chain Faucet</p>
             <Input.Group className="input-group">
-              <Input defaultValue="Iput your MMT smart chain address..." />
+              <Input placeholder="Iput your MMT smart chain address..." />
               <Select
                 defaultValue={OptionList[0].name}
                 dropdownStyle={{ boxShadow: '0 4px 4px 0 rgba(0,0,0,0.25)' }}
