@@ -1,13 +1,12 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const ScanExplorerStyle = styled.div`
-            .ScanExplorer{
-                .ant-layout-header{
-                    background-color: #fff;
-                    height: 64px;
-                }
-            }
+  .ScanExplorer {
+    .ant-layout-header {
+      background-color: #fff;
+      height: 64px;
+    }
+  }
+`;
 
-`
-
-export default ScanExplorerStyle
+export default ScanExplorerStyle;
