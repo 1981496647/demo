@@ -2,19 +2,20 @@ import styled from "styled-components";
 
 const HomeStyle = styled.div`
   .home-layout {
+    background-image: linear-gradient(90deg, #682878, #cc555c);
     .ant-layout-content {
-      background-color: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       .ant-card-bordered {
         border: none;
+        margin-top: 102px;
       }
     }
     .title {
       font-size: 42px;
       font-weight: 700;
       text-align: center;
+      margin-top: 91px;
     }
     .input-group {
       display: flex;
@@ -72,6 +73,7 @@ const HomeStyle = styled.div`
       margin-top: 44px;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
       border-radius: 8px;
+      margin-bottom: 82px;
       .rectangle-item {
         flex: 1;
         line-height: 58px;
