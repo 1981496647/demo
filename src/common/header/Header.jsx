@@ -35,6 +35,7 @@ const Header = memo(() => {
           suffixIcon={<img src={icon} alt=""></img>}
           onDropdownVisibleChange={onDropdownVisibleChange}
           dropdownStyle={dropdownStyle}
+          dropdownClassName="select-option-header"
         >
           {item.arr.map((ite) => {
             return (
