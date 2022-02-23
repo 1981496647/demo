@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
-const HeaderStyle = styled.div`
+import { StyledPageContent} from '../../style/common'
+const HeaderStyle = styled(StyledPageContent)`
   display: flex;
   align-items: center;
   justify-content: space-between;

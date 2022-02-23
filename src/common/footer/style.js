@@ -3,7 +3,7 @@ import styled from "styled-components";
 const FooterStyle = styled.div`
   background-image: linear-gradient(90deg, #682878, #cc555c);
   position: relative;
-  padding: 0 32px;
+  padding: 16px 0 12px;
   padding-top:16px;
   padding-bottom: 12px;
   .img-logo {
