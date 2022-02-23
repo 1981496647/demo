@@ -6,6 +6,7 @@ const FooterStyle = styled.div`
   padding: 16px 0 12px;
   padding-top:16px;
   padding-bottom: 12px;
+  z-index: -1;
   .img-logo {
     position: absolute;
     right: 0;
