@@ -2,7 +2,6 @@ import React, { memo } from "react";
 import FooterStyle from "./style";
 import logo from "../../assets/img/footer/logo.svg";
 import title from "../../assets/img/footer/title.svg";
-import line from "../../assets/img/footer/line.svg";
 import { list } from "./footerList";
 const Footer = memo(() => {
   return (

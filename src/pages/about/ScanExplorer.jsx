@@ -4,7 +4,7 @@ import { Layout } from "antd";
 
 import cardimg from "../../assets/img/about/cardimg.svg";
 const ScanExplorer = memo(() => {
-  const { Content, Header, Footer } = Layout;
+  const { Content, Footer } = Layout;
   return (
     <ScanExplorerStyle>
       <Layout className="ScanExplorer">
