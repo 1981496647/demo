@@ -3,9 +3,11 @@ import FooterStyle from "./style";
 import logo from "../../assets/img/footer/logo.svg";
 import title from "../../assets/img/footer/title.svg";
 import { list } from "./footerList";
+import { StyledPageContent} from '../../style/common'
 const Footer = memo(() => {
   return (
     <FooterStyle>
+      <StyledPageContent>
       <img src={logo} alt="" className="img-logo" />
       <div className="title">
         <img src={title} alt="" />
@@ -29,6 +31,8 @@ const Footer = memo(() => {
           })}
         </div>
       </div>
+      </StyledPageContent>
+      
     </FooterStyle>
   );
 });
