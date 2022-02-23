@@ -13,7 +13,6 @@ const ScanExplorer = memo(() => {
     return arr.map((item, index) => {
       return <div
         key={item} className="carditem"
-        // style={{ borderRight: index === 2 ? 'none' : '1px solid rgba(228, 228, 228, 1)' }}
       >
         {
           cardList[item].map((ite) => {
