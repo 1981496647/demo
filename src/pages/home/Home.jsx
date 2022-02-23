@@ -1,14 +1,16 @@
 import React, { memo } from "react";
-import HomeStyle from './style'
+import HomeStyle from "./style";
 
-import { Layout, Card, Input, Select, } from 'antd';
+import { Layout, Card, Input, Select } from "antd";
 
-import { OptionList, OptionList2, dorpdown } from './homeListData'
-import home_1 from '../../assets/img/home/home_1.svg'
+import { OptionList, OptionList2, dorpdown } from "./homeListData";
+import home_1 from "../../assets/img/home/home_1.svg";
 const Home = memo(() => {
-  const { Content } = Layout
-  const { Option } = Select
-
+  const { Content } = Layout;
+  const { Option } = Select;
+  const dropdownStyle = {
+    boxShadow: "0 4px 4px 0 rgba(0,0,0,0.25)",
+  };
 
   return (
     <HomeStyle>
@@ -20,35 +22,38 @@ const Home = memo(() => {
               <Input placeholder="Iput your MMT smart chain address..." />
               <Select
                 defaultValue={OptionList[0].name}
-                dropdownStyle={{ boxShadow: '0 4px 4px 0 rgba(0,0,0,0.25)' }}
+                dropdownStyle={dropdownStyle}
+                dropdownClassName="select-dropdown"
                 suffixIcon={<img src={home_1} alt=""></img>}
               >
-                {
-                  OptionList.map(item => <Option key={item.value} value={item.value}>{item.name}</Option>)
-                }
+                {OptionList.map((item) => (
+                  <Option key={item.value} value={item.value}>
+                    {item.name}
+                  </Option>
+                ))}
               </Select>
               <Select
                 defaultValue="Peggy tokens"
-                dropdownStyle={{ boxShadow: '0 4px 4px 0 rgba(0,0,0,0.25)' }}
+                dropdownStyle={dropdownStyle}
                 className="radius-option"
                 suffixIcon={<img src={home_1} alt=""></img>}
               >
-                {
-                  OptionList2.map(item => <Option key={item.value} value={item.value}>{item.name}</Option>)
-                }
+                {OptionList2.map((item) => (
+                  <Option key={item.value} value={item.value}>
+                    {item.name}
+                  </Option>
+                ))}
               </Select>
             </Input.Group>
             <div className="rectangle">
-              {
-                dorpdown.map(item => {
-                  return (
-                    <div key={item.name} className="rectangle-item">
-                      <img src={item.icon} alt="" />
-                      <span>{item.name}</span>
-                    </div>
-                  )
-                })
-              }
+              {dorpdown.map((item) => {
+                return (
+                  <div key={item.name} className="rectangle-item">
+                    <img src={item.icon} alt="" />
+                    <span>{item.name}</span>
+                  </div>
+                );
+              })}
             </div>
           </Card>
         </Content>
